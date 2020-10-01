@@ -1,0 +1,12 @@
+.wrapper {    
+    background-color: #ffffff;
+    border: 1px solid #d7dbe1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #949494;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.section_title {
+    color: #000000;
+    margin-bottom: 30px;
+}

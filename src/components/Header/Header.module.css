@@ -1,0 +1,12 @@
+.img_wrapper img {
+    width: 60px;
+    margin-left: 55px;
+}
+.header {
+    grid-area: header;
+    background-color: #304159;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }

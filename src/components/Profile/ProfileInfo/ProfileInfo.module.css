@@ -1,0 +1,65 @@
+.user_profile {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #d7dbe1;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #949494;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.user_avatar img {
+  width: 200px;
+  margin-right: 50px;
+  border-radius: 5px;
+}
+.username {
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.profile_row {
+  display: flex;
+}
+.desc_label {
+  width: 150px;
+  color: #69727e;
+  margin-right: 50px;
+}
+.posts {
+  padding-left: 50px;
+}
+.post_field {
+  display: block;
+  max-width: 500px;
+  min-width: 500px;
+  min-height: 100px;
+  padding: 20px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.send_btn {
+  box-shadow: inset 0px 1px 0px 0px #bee2f9;
+  background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+  background-color: #63b8ee;
+  border-radius: 6px;
+  border: 1px solid #3866a3;
+  display: inline-block;
+  cursor: pointer;
+  color: #14396a;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #7cacde;
+}
+.send_btn:hover {
+  background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+  background-color: #468ccf;
+}
+.send_btn:active {
+  position: relative;
+  top: 1px;
+}
