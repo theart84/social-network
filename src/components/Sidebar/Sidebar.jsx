@@ -25,6 +25,10 @@ const Sidebar = () => {
           <span><FontAwesomeIcon icon={faAddressBook} />     </span>Friends</NavLink>
           </li>
         <li className={sidebar.nav_menu_item}>
+          <NavLink className={sidebar.nav_menu_link} to='/users' activeClassName={sidebar.active}>
+            <span><FontAwesomeIcon icon={faAddressBook} />     </span>Users</NavLink>
+        </li>
+        <li className={sidebar.nav_menu_item}>
           <NavLink className={sidebar.nav_menu_link} to='/music' activeClassName={sidebar.active}>
           <span><FontAwesomeIcon icon={faPlayCircle} />     </span>Music</NavLink>
           </li>
