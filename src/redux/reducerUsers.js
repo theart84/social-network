@@ -3,38 +3,7 @@ const UNFOLLOW = 'UNFOLLOW';
 const SETUSERS = 'SETUSERS';
 
 let initialState = {
-  users: [
-    {
-      id: 1,
-      firsName: 'Sergey',
-      avatarURL: 'https://volynstal.com.ua/uploads/thumbs/site-5d1b1b80340eb.jpg',
-      followed: true,
-      location: {
-        country: 'Russia',
-        cityName: 'Chelyabinsk'
-      }
-    },
-    {
-      id: 2,
-      firsName: 'Kate',
-      avatarURL: 'https://sun9-66.userapi.com/c851028/v851028730/3b4b6/59nUedLnmkM.jpg?ava=1',
-      followed: false,
-      location: {
-        country: 'Russia',
-        cityName: 'Moscow'
-      }
-    },
-    {
-      id: 3,
-      firsName: 'Hippolyte',
-      avatarURL: 'https://sun9-53.userapi.com/c851136/v851136630/1249b/zHMMzL19wqA.jpg?ava=1',
-      followed: false,
-      location: {
-        country: 'Russia',
-        cityName: 'Noskovsk'
-      }
-    }
-  ]
+  users: []
 }
 const reducerUsers = (state = initialState, action) => {
   switch (action.type) {
@@ -62,6 +31,7 @@ const reducerUsers = (state = initialState, action) => {
       }
     }
     case SETUSERS: {
+      // debugger;
       return {
         ...state,
       users: [...state.users, ...action.users]
