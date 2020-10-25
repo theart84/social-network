@@ -4,13 +4,13 @@ import * as axios from 'axios'
 import userAvatar from '../../../src/img/user.png';
 
 class Users extends React.Component {
-  constructor(props) {
-    super(props);
+  componentDidMount() {
     axios.get('https://social-network.samuraijs.com/api/1.0/users')
-      .then(response => this.props.setUser(response.data.items))
+         .then(response => this.props.setUser(response.data.items))
   }
+
   render() {
-     return ( <div className={users.wrapper}>
+    return (<div className={users.wrapper}>
       <h2 className={users.section_title}>Users</h2>
       {
         this.props.users.map(user => (
@@ -37,5 +37,6 @@ class Users extends React.Component {
     </div>)
   }
 }
+
 export default Users;
 
